@@ -13,12 +13,12 @@ p {
   margin: 0 0 1em;
 }
 .container {
-  width: 1920px;
+  width: 100%;
   margin: 0 auto;
 }
 .picture, .resume {
   position: fixed;
-  width: 960px;
+  width: 50%;
   padding: 3.125rem;
 }
 .picture {
@@ -88,4 +88,23 @@ p {
   font-style: italic;
   font-weight: 600;
   color: rgb(43, 93, 240);
+}
+
+@media screen and (max-width: 600px) {
+  .picture {
+    width: 80%;
+  }
+  .resume {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .sidebar {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+    padding: 5%;
+  }
 }
